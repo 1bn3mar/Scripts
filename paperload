@@ -1,0 +1,9 @@
+#!/bin/sh
+
+# Define the directory to process
+DIRECTORY=~/.local/share/wallhaven/
+
+PAPER="`ls $DIRECTORY/* | imv -s crop`"
+
+hyprctl hyprpaper preload "$PAPER"
+hyprctl hyprpaper wallpaper "eDP-1, $PAPER"

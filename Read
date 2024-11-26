@@ -1,0 +1,5 @@
+#! /bin/dash
+
+EBOOK_PATH="`exa ~/Media/eBooks/ | tofi`"
+
+zathura ~/Media/eBooks/$EBOOK_PATH/"`ls ~/Media/eBooks/$EBOOK_PATH/ | tofi`"
